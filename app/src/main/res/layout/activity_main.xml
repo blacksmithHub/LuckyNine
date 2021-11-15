@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libor.luckynine.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Computer Card"
+        android:textIsSelectable="false"
+        android:textColor="#300aef"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardMach1"
+            android:src="@drawable/unknowncard2"
+            android:layout_margin="0.5dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardMach2"
+            android:src="@drawable/unknowncard2"
+            android:layout_margin="0.5dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardMach3"
+            android:src="@drawable/unknowncard2"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Card"
+        android:id="@+id/textView"
+        android:textColor="#300aef"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardUser1"
+            android:src="@drawable/unknowncard1"
+            android:layout_margin="0.5dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardUser2"
+            android:src="@drawable/unknowncard1"
+            android:layout_margin="0.5dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cardUser3"
+            android:src="@drawable/unknowncard1"
+            android:layout_margin="0.5dp"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Long press this to deal card"
+        android:id="@+id/actionText"
+        android:longClickable="true"
+        android:textStyle="bold|italic"
+        android:textColor="#090606"
+        android:background="@drawable/abc_list_longpressed_holo" />
+
+</LinearLayout>
